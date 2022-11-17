@@ -868,6 +868,48 @@ footer {
     gap: 20px;
 }
 
+.footdown {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+}
+
+.footdown ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.footdown ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.footdown ul li:hover * {
+    color: rgb(129, 53, 136);
+}
+
+.footdown ul li i {
+    font-size: 20px;
+    color: gray;
+}
+
+.footdown ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+
 @media screen and (max-width:450px) {
     .sub_choose2 {
         flex-grow: 1;
@@ -880,6 +922,10 @@ footer {
 
     .exam_opt {
         width: auto;
+    }
+
+    .main_left>* {
+        text-align: center;
     }
 
     .main_right_sub input,
@@ -913,6 +959,10 @@ footer {
 
     footer {
         justify-content: center;
+    }
+
+    .footdown {
+        display: block;
     }
 
 }
