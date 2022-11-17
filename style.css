@@ -603,7 +603,7 @@ main {
 .sub_Students_Speaks {
     display: flex;
     gap: 20px;
-    width: 80%;
+    width: 60%;
     overflow-x: auto;
     margin: auto;
 }
@@ -621,9 +621,18 @@ main {
     overflow: auto;
 }
 
+.stu_profile {
+    display: flex;
+    align-items: center;
+}
+
 .stu_profile img {
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.stu_profile span {
+    white-space: nowrap;
 }
 
 
@@ -667,16 +676,14 @@ main {
     border: 10px solid black;
 }
 
+.latest_updates>h2 {
+    text-align: center;
+}
+
 .latest_updates_notifications {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-}
-
-.latest_updates_notifications>h2 {
-    flex-basis: 100%;
-    text-align: center;
 }
 
 .latest_updates_notifications_sub {
@@ -864,6 +871,7 @@ footer {
 @media screen and (max-width:450px) {
     .sub_choose2 {
         flex-grow: 1;
+        flex-basis: 100%;
     }
 
     .exam_opts {
@@ -889,6 +897,16 @@ footer {
         justify-content: center;
     }
 
+    .latest_updates_notifications {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .sub_Students_Speaks {
+        width: 100%;
+        height: 400px;
+    }
+
     .download_app_link img {
         width: 100%;
     }
@@ -896,4 +914,5 @@ footer {
     footer {
         justify-content: center;
     }
+
 }
