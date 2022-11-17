@@ -46,9 +46,6 @@ nav .fa-video {
     text-align: right;
 }
 
-/* nav>ul>ul{
-    border-radius: 10px;
-  } */
 nav ul ul {
     position: absolute;
     display: flex;
@@ -442,6 +439,22 @@ main {
     flex-wrap: wrap;
 }
 
+.content_right_in_sub_top ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content_right_in_sub_top ul li a:before,
+.content_right_in_sub_down ul li a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
 .content_right_in_sub_top ul li a {
     text-decoration: none;
     color: black;
@@ -449,6 +462,8 @@ main {
 
 .content_right_in_sub_down ul {
     background-color: white;
+    list-style: none;
+    padding: 0;
 }
 
 .content_right_in_sub_down ul li a {
@@ -526,9 +541,7 @@ main {
     border-radius: 5px;
     background-color: rgb(129, 53, 136);
     flex-basis: 30%;
-    /* flex-grow: 1; */
     padding-left: 20px;
-    /* flex-shrink: 0; */
 }
 
 .sub_choose2 a {
@@ -682,8 +695,28 @@ main {
     text-decoration: none;
 }
 
+
+.latest_updates_notifications_sub ul {
+    padding: 15px;
+}
+
 .latest_updates_notifications_sub ul li {
     margin-bottom: 20px;
+}
+
+.latest_updates_notifications_sub ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.latest_updates_notifications_sub ul li a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .latest_updates_notifications_sub ul li a {
