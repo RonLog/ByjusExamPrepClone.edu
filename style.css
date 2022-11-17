@@ -502,6 +502,10 @@ main {
     margin-right: 10px;
 }
 
+.jobrole span {
+    white-space: nowrap;
+}
+
 .choose1 {
     display: flex;
     flex-wrap: wrap;
@@ -864,6 +868,10 @@ footer {
 
     .exam_opts {
         width: 100%;
+    }
+
+    .exam_opt {
+        width: auto;
     }
 
     .main_right_sub input,
