@@ -36,10 +36,172 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav .fa-caret-down,
+nav .fa-angle-down,
 nav .fa-video {
     color: white;
     vertical-align: middle;
+}
+
+.fa-angle-right {
+    text-align: right;
+}
+
+/* nav>ul>ul{
+    border-radius: 10px;
+  } */
+nav ul ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul ul li {
+    background-color: white;
+    text-align: left;
+    padding: 15px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+nav ul ul li a {
+    color: black;
+    white-space: nowrap;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+#Study_Materials .Bank_Exams {
+    display: none;
+}
+
+#Study_Materials:hover .Bank_Exams {
+    display: block;
+}
+
+.Bank_Exams .SBIPO2022 {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    display: none;
+}
+
+.Bank_Exams:hover .SBIPO2022 {
+    display: block;
+}
+
+.SBIPO2022 #SBIPOVacancy2022 {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    display: none;
+}
+
+.SBIPO2022:hover #SBIPOVacancy2022 {
+    display: block;
+}
+
+
+#SSCExams .SSCCGL {
+    position: absolute;
+    top: 58px;
+    left: 225px;
+    display: none;
+}
+
+#SSCExams:hover .SSCCGL {
+    display: block;
+}
+
+#TeachingExams .CTET {
+    position: absolute;
+    top: 110px;
+    left: 225px;
+    display: none;
+}
+
+#TeachingExams:hover .CTET {
+    display: block;
+}
+
+#DefenceExams .AFCAT {
+    position: absolute;
+    top: 167px;
+    left: 225px;
+    display: none;
+}
+
+#DefenceExams:hover .AFCAT {
+    display: block;
+}
+
+#UPSCExam .UPSCExamDate {
+    position: absolute;
+    top: 222px;
+    left: 225px;
+    display: none;
+}
+
+#UPSCExam:hover .UPSCExamDate {
+    display: block;
+}
+
+#NET_SETExams .UGCNET2022 {
+    position: absolute;
+    top: 280px;
+    left: 225px;
+    display: none;
+}
+
+#NET_SETExams:hover .UGCNET2022 {
+    display: block;
+}
+
+#GATE2023 .GATESyllabus {
+    position: absolute;
+    top: 335px;
+    left: 225px;
+    display: none;
+}
+
+#GATE2023:hover .GATESyllabus {
+    display: block;
+}
+
+#StatePSCExams .UPPSCPCS {
+    position: absolute;
+    top: 390px;
+    left: 225px;
+    display: none;
+}
+
+#StatePSCExams:hover .UPPSCPCS {
+    display: block;
+}
+
+#MBAEntranceExam .CATExam {
+    position: absolute;
+    top: 450px;
+    left: 225px;
+    display: none;
+}
+
+#MBAEntranceExam:hover .CATExam {
+    display: block;
+}
+
+#LAWEntranceExams .CLAT {
+    position: absolute;
+    top: 500px;
+    left: 225px;
+    display: none;
+}
+
+#LAWEntranceExams:hover .CLAT {
+    display: block;
 }
 
 .search {
