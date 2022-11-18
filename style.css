@@ -13,9 +13,87 @@ header {
     justify-content: space-evenly;
 }
 
+
+header>label,
+header>input[type="checkbox"] {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
+}
+
+.mobnav {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 500px;
+    overflow: auto;
+    display: none;
+}
+
+.mobnav ul>* {
+    border-bottom: 1px solid lightgray;
+    line-height: 50px;
+}
+
+.mobnav h2 {
+    color: lightgray;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.mobnav h2 i {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.mobnav h3 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.mobnav h3 span {
+    margin-left: 40px;
+    color: rgb(240, 102, 90);
+    padding-right: 15px;
+}
+
+.mobnav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobnav ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobnav ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.mobnav ul li i {
+    padding-right: 15px;
+}
+
+.mobnav .register {
+    text-align: center;
+}
+
+.register button {
+    background: linear-gradient(to right, rgb(248, 125, 35), rgb(240, 102, 90));
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -406,6 +484,8 @@ main {
     color: gray;
     padding: 5px 20px;
     white-space: nowrap;
+    line-height: 50px;
+    height: 56px;
 }
 
 .content_left>label:hover {
@@ -442,6 +522,7 @@ main {
 .content_right_in_sub_top ul {
     list-style: none;
     padding: 0;
+    background: white;
 }
 
 .content_right_in_sub_top ul li a:before,
@@ -938,9 +1019,39 @@ footer {
         width: 100%;
     }
 
-    .logo {
-        flex-basis: 100%;
-        justify-content: center;
+    nav {
+        display: none;
+    }
+
+    header>label {
+        display: block;
+    }
+
+    header>label::before {
+        content: "\2261";
+        font-size: 40px;
+        color: white;
+    }
+
+    header>input[type="checkbox"]:checked+label::before {
+        content: "\00d7";
+    }
+
+    .mobnav {
+        display: none;
+    }
+
+    header>input[type="checkbox"]:checked~.mobnav {
+        display: block;
+    }
+
+    .search button {
+        display: none;
+    }
+
+    .content_left,
+    .content_right {
+        width: 100%;
     }
 
     .latest_updates_notifications {
