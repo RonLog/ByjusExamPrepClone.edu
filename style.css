@@ -29,7 +29,8 @@ header>input[type="checkbox"] {
     position: absolute;
     top: 60px;
     left: 0;
-    height: 500px;
+    height: 70vh;
+    width: 80vw;
     overflow: auto;
     display: none;
 }
@@ -56,7 +57,7 @@ header>input[type="checkbox"] {
 }
 
 .mobnav h3 span {
-    margin-left: 40px;
+    margin-left: 10px;
     color: rgb(240, 102, 90);
     padding-right: 15px;
 }
