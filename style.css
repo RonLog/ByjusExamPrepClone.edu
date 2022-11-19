@@ -1002,6 +1002,32 @@ footer {
     font-size: 12px;
 }
 
+.openinapp {
+    position: fixed;
+    left: 0;
+    bottom: 90px;
+    border-radius: 0px 50px 50px 0px;
+    color: white;
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgb(248, 125, 35), rgb(238, 49, 32));
+    display: none;
+}
+
+.questionmark {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    color: white;
+    background: linear-gradient(to right, rgb(248, 125, 35), rgb(238, 49, 32));
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    display: none;
+}
+
 @media screen and (max-width:450px) {
     .sub_choose2 {
         flex-grow: 1;
@@ -1084,6 +1110,11 @@ footer {
     }
 
     .footdown {
+        display: block;
+    }
+
+    .questionmark,
+    .openinapp {
         display: block;
     }
 
