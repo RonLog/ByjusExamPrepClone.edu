@@ -311,6 +311,49 @@ nav ul li:hover ul {
     outline: none;
 }
 
+.search input:hover::placeholder {
+    color: rgb(243, 112, 65);
+}
+
+.serchinput {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.serchinput ul li {
+    border-bottom: 1px solid lightgray;
+    padding: 15px 5px;
+}
+
+.serchinput ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.serchinput ul {
+    display: none;
+}
+
+.serchinput:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search .fa-angle-down {
+    color: rgb(243, 112, 65);
+    font-weight: bold;
+    background-color: white;
+    font-size: 20px;
+    padding: 4px 0px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
 .search button {
     color: white;
     background-color: rgb(243, 112, 65);
