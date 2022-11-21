@@ -142,10 +142,6 @@ nav .fa-video {
     text-align: right;
 }
 
-/* nav>ul>ul{
-      border-radius: 10px;
-    } */
-
 nav ul ul {
     position: absolute;
     display: flex;
@@ -304,7 +300,6 @@ nav ul li:hover ul {
     display: flex;
     gap: 10px;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .fa-magnifying-glass {
@@ -374,14 +369,12 @@ nav ul li:hover ul {
 }
 
 .exam_category {
-    /* display: flex; */
     background-color: rgb(241, 241, 241);
     margin: 30px auto;
 }
 
 .exam_category h3,
 .exam_category>p {
-    /* flex-basis: 100%; */
     padding-left: 260px;
     margin: 0;
 }

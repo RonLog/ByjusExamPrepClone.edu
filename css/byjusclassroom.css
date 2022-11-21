@@ -11,10 +11,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    /* position:fixed;
-      top:0;
-      left:0;
-      width:100vw; */
 }
 
 header>label,
@@ -141,10 +137,6 @@ nav .fa-video {
 .fa-angle-right {
     text-align: right;
 }
-
-/* nav>ul>ul{
-      border-radius: 10px;
-    } */
 
 nav ul ul {
     position: absolute;
@@ -304,7 +296,6 @@ nav ul li:hover ul {
     display: flex;
     gap: 10px;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .fa-magnifying-glass {
@@ -397,7 +388,6 @@ nav ul li:hover ul {
     flex-basis: 100%;
     justify-content: center;
     gap: 30px;
-    /* border: 1px solid black; */
 }
 
 .classrrom1_sub_in {
@@ -406,14 +396,12 @@ nav ul li:hover ul {
 }
 
 .exam_category {
-    /* display: flex; */
     background-color: rgb(241, 241, 241);
     margin: 30px auto;
 }
 
 .exam_category h3,
 .exam_category>p {
-    /* flex-basis: 100%; */
     padding-left: 260px;
     margin: 0;
 }
@@ -489,11 +477,6 @@ nav ul li:hover ul {
 }
 
 .ssc_railway3_sub {
-    /* width: fit-content; */
-    /* display: flex;
-        flex-wrap: wrap;
-        flex-basis: 30%;
-        flex-direction: column; */
     border-radius: 5px;
     border: 1px solid gray;
 }
@@ -524,7 +507,6 @@ nav ul li:hover ul {
 
 .popular_course_all {
     display: flex;
-    /* justify-content: center; */
     gap: 20px;
     overflow: auto;
 }
@@ -536,7 +518,6 @@ nav ul li:hover ul {
     border: 1px solid lightgray;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
     text-align: center;
-    /* white-space: nowrap; */
 }
 
 .popular_courses h2,
