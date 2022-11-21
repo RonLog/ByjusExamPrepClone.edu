@@ -1,0 +1,766 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(129, 53, 136);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position:fixed;
+      top:0;
+      left:0;
+      width:100vw; */
+}
+
+header>label,
+header>input[type="checkbox"] {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.mobnav {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 70vh;
+    width: 80vw;
+    overflow: auto;
+    display: none;
+}
+
+.mobnav ul>* {
+    border-bottom: 1px solid lightgray;
+    line-height: 50px;
+}
+
+.mobnav h2 {
+    color: lightgray;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.mobnav h2 i {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.mobnav h3 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.mobnav h3 span {
+    margin-left: 25px;
+    color: rgb(240, 102, 90);
+    padding-right: 15px;
+}
+
+.mobnav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobnav ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobnav ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.mobnav ul li i {
+    padding-right: 15px;
+}
+
+.mobnav .register {
+    text-align: center;
+}
+
+.register button {
+    background: linear-gradient(to right,
+            rgb(248, 125, 35),
+            rgb(240, 102, 90));
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mobnav .install_app button {
+    background: linear-gradient(to right,
+            rgb(248, 125, 35),
+            rgb(240, 102, 90));
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .fa-angle-down,
+nav .fa-video {
+    color: white;
+    vertical-align: middle;
+}
+
+.fa-angle-right {
+    text-align: right;
+}
+
+/* nav>ul>ul{
+      border-radius: 10px;
+    } */
+
+nav ul ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul ul li {
+    background-color: white;
+    text-align: left;
+    padding: 15px 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+nav ul ul li a {
+    color: black;
+    white-space: nowrap;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+#Study_Materials .Bank_Exams {
+    display: none;
+}
+
+#Study_Materials:hover .Bank_Exams {
+    display: block;
+}
+
+.Bank_Exams .SBIPO2022 {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    display: none;
+}
+
+.Bank_Exams:hover .SBIPO2022 {
+    display: block;
+}
+
+.SBIPO2022 #SBIPOVacancy2022 {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    display: none;
+}
+
+.SBIPO2022:hover #SBIPOVacancy2022 {
+    display: block;
+}
+
+#SSCExams .SSCCGL {
+    position: absolute;
+    top: 58px;
+    left: 225px;
+    display: none;
+}
+
+#SSCExams:hover .SSCCGL {
+    display: block;
+}
+
+#TeachingExams .CTET {
+    position: absolute;
+    top: 110px;
+    left: 225px;
+    display: none;
+}
+
+#TeachingExams:hover .CTET {
+    display: block;
+}
+
+#DefenceExams .AFCAT {
+    position: absolute;
+    top: 167px;
+    left: 225px;
+    display: none;
+}
+
+#DefenceExams:hover .AFCAT {
+    display: block;
+}
+
+#UPSCExam .UPSCExamDate {
+    position: absolute;
+    top: 222px;
+    left: 225px;
+    display: none;
+}
+
+#UPSCExam:hover .UPSCExamDate {
+    display: block;
+}
+
+#NET_SETExams .UGCNET2022 {
+    position: absolute;
+    top: 280px;
+    left: 225px;
+    display: none;
+}
+
+#NET_SETExams:hover .UGCNET2022 {
+    display: block;
+}
+
+#GATE2023 .GATESyllabus {
+    position: absolute;
+    top: 335px;
+    left: 225px;
+    display: none;
+}
+
+#GATE2023:hover .GATESyllabus {
+    display: block;
+}
+
+#StatePSCExams .UPPSCPCS {
+    position: absolute;
+    top: 390px;
+    left: 225px;
+    display: none;
+}
+
+#StatePSCExams:hover .UPPSCPCS {
+    display: block;
+}
+
+#MBAEntranceExam .CATExam {
+    position: absolute;
+    top: 450px;
+    left: 225px;
+    display: none;
+}
+
+#MBAEntranceExam:hover .CATExam {
+    display: block;
+}
+
+#LAWEntranceExams .CLAT {
+    position: absolute;
+    top: 500px;
+    left: 225px;
+    display: none;
+}
+
+#LAWEntranceExams:hover .CLAT {
+    display: block;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.fa-magnifying-glass {
+    color: white;
+    font-size: 20px;
+}
+
+.search input {
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search input:hover::placeholder {
+    color: rgb(243, 112, 65);
+}
+
+.serchinput {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.serchinput ul li {
+    border-bottom: 1px solid lightgray;
+    padding: 15px 5px;
+}
+
+.serchinput ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.serchinput ul {
+    display: none;
+}
+
+.serchinput:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search .fa-angle-down {
+    color: rgb(243, 112, 65);
+    font-weight: bold;
+    background-color: white;
+    font-size: 20px;
+    padding: 4px 0px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.search button {
+    color: white;
+    background-color: rgb(243, 112, 65);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.classroom1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.classroom1 h2,
+.classroom1 p {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.classroom1 p {
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.classrrom1_sub {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid black; */
+}
+
+.classrrom1_sub_in {
+    text-align: center;
+    color: gray;
+}
+
+.exam_category {
+    /* display: flex; */
+    background-color: rgb(241, 241, 241);
+    margin: 30px auto;
+}
+
+.exam_category h3,
+.exam_category>p {
+    /* flex-basis: 100%; */
+    padding-left: 260px;
+    margin: 0;
+}
+
+.exam_category h3 {
+    padding-top: 30px;
+}
+
+.exam_category>p {
+    color: gray;
+}
+
+.exam_categories_sub {
+    margin: 40px auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.exam_category_sub {
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    width: 150px;
+}
+
+.all_courses {
+    width: 70%;
+    margin: auto;
+}
+
+.ssc_railways {
+    margin-bottom: 40px;
+}
+
+.ssc_railway1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ssc_railway1>a {
+    color: rgb(239, 110, 66);
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.ssc_railway1_left span {
+    white-space: nowrap;
+}
+
+.ssc_railway1_left img {
+    vertical-align: middle;
+}
+
+.ssc_railway2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.ssc_railway2 a:hover {
+    color: rgb(239, 110, 66);
+}
+
+.ssc_railway3 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.ssc_railway3_sub {
+    /* width: fit-content; */
+    /* display: flex;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+        flex-direction: column; */
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.ssc_railway3_sub img {
+    width: 100%;
+}
+
+.ssc_railway3_sub>* {
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.ssc_railway3_sub span {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid lightgray;
+}
+
+.head_popular_courses {
+    background-color: rgb(235, 235, 235);
+}
+
+.popular_courses {
+    background-color: rgb(235, 235, 235);
+    width: 70%;
+    margin: auto;
+}
+
+.popular_course_all {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    overflow: auto;
+}
+
+.popular_course_list {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+    text-align: center;
+    /* white-space: nowrap; */
+}
+
+.popular_courses h2,
+.popular_courses p {
+    margin: 0;
+}
+
+.popular_courses h2 {
+    padding-top: 20px;
+}
+
+.popular_courses p {
+    padding-bottom: 20px;
+}
+
+.about {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.about3 ul li {
+    margin-top: 20px;
+}
+
+.about3 ul li a {
+    text-decoration: none;
+    color: rgb(239, 110, 66);
+}
+
+.accordion_content ul li {
+    list-style: none;
+}
+
+.accordion_content ul li:before {
+    content: "-";
+    padding-right: 10px;
+}
+
+.accordion_content ul li a {
+    color: rgb(239, 110, 66);
+}
+
+.accordion_tab>label {
+    border: 1px solid lightgray;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.accordion_tab>label:after {
+    font-family: fontawesome;
+    content: "\f078";
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.accordion_tab>.accordion_toggle:checked~label::after {
+    transform: rotate(180deg);
+}
+
+.accordion_tab .accordion_toggle {
+    display: none;
+}
+
+.accordion_tab>.accordion_content {
+    max-height: 0;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.accordion_tab>.accordion_toggle:checked~.accordion_content {
+    max-height: 100vh;
+    padding: 20px;
+}
+
+.accordion_tab>.accordion_toggle:checked~label {
+    font-weight: bold;
+}
+
+.footup {
+    background-color: rgb(40, 24, 56);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footup_sub p:hover {
+    color: rgb(239, 110, 66);
+}
+
+.footup_sub h5:hover {
+    color: rgb(239, 110, 66);
+}
+
+.footup ul {
+    list-style: none;
+}
+
+.footup a {
+    text-decoration: none;
+    color: white;
+}
+
+.footup a:hover {
+    color: rgb(239, 110, 66);
+}
+
+.payments {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(40, 24, 56);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footdown {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35);
+}
+
+.footdown ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.footdown ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.footdown ul li:hover * {
+    color: rgb(129, 53, 136);
+}
+
+.footdown ul li i {
+    font-size: 20px;
+    color: gray;
+}
+
+.footdown ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .all_courses {
+        width: auto;
+        margin: 0;
+    }
+
+    .popular_courses {
+        width: auto;
+        margin: 0;
+    }
+
+    .about {
+        width: auto;
+        margin: 0;
+    }
+
+    .exam_category h3,
+    .exam_category>p {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        display: none;
+    }
+
+    header>label {
+        display: block;
+    }
+
+    header>label::before {
+        content: "\2261";
+        font-size: 40px;
+        color: white;
+    }
+
+    header>input[type="checkbox"]:checked+label::before {
+        content: "\00d7";
+    }
+
+    .mobnav {
+        display: none;
+    }
+
+    header>input[type="checkbox"]:checked~.mobnav {
+        display: block;
+    }
+
+    .search button {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .footdown {
+        display: block;
+    }
+}
