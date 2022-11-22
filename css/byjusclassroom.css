@@ -707,6 +707,20 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    header {
+        justify-content: unset;
+    }
+
+    .logo {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .search {
+        justify-content: center;
+        flex-grow: 1;
+    }
+
     nav {
         display: none;
     }

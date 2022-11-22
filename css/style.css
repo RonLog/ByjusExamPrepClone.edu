@@ -57,7 +57,7 @@ header>input[type="checkbox"] {
 }
 
 .mobnav h3 span {
-    margin-left: 70px;
+    margin-left: 80px;
     color: rgb(240, 102, 90);
     padding-right: 15px;
 }
@@ -1072,31 +1072,18 @@ footer {
 }
 
 @media screen and (max-width:450px) {
-    .sub_choose2 {
+    header {
+        justify-content: unset;
+    }
+
+    .logo {
         flex-grow: 1;
-        flex-basis: 100%;
+        justify-content: center;
     }
 
-    .exam_opts {
-        width: 100%;
-    }
-
-    .exam_opt {
-        width: auto;
-    }
-
-    .main_left>* {
-        text-align: center;
-    }
-
-    .main_right_sub input,
-    .main_right_sub button {
-        width: 100%;
-    }
-
-    .download_app_link_sub input,
-    .download_app_link_sub button {
-        width: 100%;
+    .search {
+        justify-content: center;
+        flex-grow: 1;
     }
 
     nav {
@@ -1127,6 +1114,33 @@ footer {
 
     .search button {
         display: none;
+    }
+
+    .sub_choose2 {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    .exam_opts {
+        width: 100%;
+    }
+
+    .exam_opt {
+        width: auto;
+    }
+
+    .main_left>* {
+        text-align: center;
+    }
+
+    .main_right_sub input,
+    .main_right_sub button {
+        width: 100%;
+    }
+
+    .download_app_link_sub input,
+    .download_app_link_sub button {
+        width: 100%;
     }
 
     .content_left,
