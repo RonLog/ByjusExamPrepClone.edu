@@ -52,6 +52,7 @@
           }],
     "lang": "en-US",
     "start_url": "./index.html",
+    "scope": "./",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "#1976d2"
