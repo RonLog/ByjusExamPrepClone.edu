@@ -9,7 +9,6 @@ var filesToCache = [
     './css/byjusclassroom.css',
     './css/byjusPractice.css',
     './css/byjusTestSeries.css',
-    './img'
 ];
 
 /* Start the service worker and cache all of the app's content */
