@@ -2,11 +2,11 @@ var cacheName = 'pwa';
 var filesToCache = [
     './',
     './index.html',
-    './byjusclassroom.html',
+    './byjusClassRoom.html',
     './byjusPractice.html',
     './byjusTestSeries.html',
     './css/style.css',
-    './css/byjusclassroom.css',
+    './css/byjusClassRoom.css',
     './css/byjusPractice.css',
     './css/byjusTestSeries.css',
 ];
