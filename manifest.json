@@ -51,7 +51,7 @@
             "purpose": "maskable any"
           }],
     "lang": "en-US",
-    "start_url": "./index.html",
+    "start_url": "./",
     "scope": "./",
     "display": "standalone",
     "background_color": "white",
