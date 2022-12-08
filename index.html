@@ -9,6 +9,19 @@
   <link rel="shortcut icon" href="./img/byjus_favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/a131e7076c.js" crossorigin="anonymous"></script>
+  <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" href="byjus-icon-48x48.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/icon-152x152.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Byjus" />
+    <meta
+      name="msapplication-TileImage"
+      content="./img/icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
 </head>
 
 <body>
@@ -2053,6 +2066,18 @@
   <div class="questionmark">
     <i class="fa-regular fa-circle-question"></i>
   </div>
+
+
+  <script>
+    window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
+  </script>
   
 </body>
 
