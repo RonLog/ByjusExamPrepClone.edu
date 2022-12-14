@@ -9,7 +9,6 @@ var filesToCache = [
     './css/byjusClassRoom.css',
     './css/byjusPractice.css',
     './css/byjusTestSeries.css',
-    './img',
     'https://kit.fontawesome.com/a131e7076c.js',
     'https://fonts.googleapis.com/css2?family=Poppins&display=swap'
 ];
