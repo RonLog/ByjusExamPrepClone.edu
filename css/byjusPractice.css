@@ -547,4 +547,7 @@ footer {
     .exam_category>p {
         padding-left: 0px;
     }
+    .exam_categories_sub{
+        width:auto;
+    }
 }

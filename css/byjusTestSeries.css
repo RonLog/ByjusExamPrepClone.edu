@@ -771,6 +771,9 @@ footer {
     .accordion_tab>.accordion_toggle:checked~label::after {
         right: 0px;
     }
+    .exam_categories_sub{
+        width:auto;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -824,5 +827,8 @@ footer {
 
     .footdown {
         display: block;
+    }
+    .classrrom1_sub_in{
+        width:100%;
     }
 }
