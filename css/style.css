@@ -1044,6 +1044,9 @@ footer {
     color: gray;
     font-size: 12px;
 }
+.footdown ul li a:visited{
+    color: rgb(129, 53, 136);
+}
 
 .openinapp {
     position: fixed;
